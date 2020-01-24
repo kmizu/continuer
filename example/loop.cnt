@@ -1,0 +1,9 @@
+mutable i = 0
+save c;
+val result = if(i < 10) { 
+  i = i + 1
+  continue c
+} else {
+  i
+}
+println(result)

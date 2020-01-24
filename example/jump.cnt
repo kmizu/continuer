@@ -1,0 +1,17 @@
+mutable i = 0; mutable j = 0
+save c1;
+val result = if(i < 10) { 
+  i = i + 1
+  continue c1
+} else {
+  i
+}
+save c2;
+val result2 = if(j < 20) {
+  j = j + 1
+  continue c2
+} else {
+  j
+}
+println(result)
+println(result2)
