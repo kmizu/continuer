@@ -54,7 +54,7 @@ object Main {
   def parseCommandLine(args: Array[String]): Option[(String, String)] = {
     val paser = new Parser
     args match {
-      case Array(fileName) if fileName.endsWith("mtlk") =>
+      case Array(fileName) if fileName.endsWith("cnt") =>
         Some("-f"-> fileName)
       case Array("-e", line) =>
         Some("-e" -> line)
